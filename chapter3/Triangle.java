@@ -12,15 +12,24 @@ public class Triangle {
 		System.out.print("Please Enter Triangle Side One: ");
 		double one = input.nextDouble();
 		
-		System.out.print("Please Enter Triangle Side Two ");
+		System.out.print("Please Enter Triangle Side Two: ");
 		double two = input.nextDouble();
 		
-		System.out.print("Please Enter Triangle Side Three ");
+		System.out.print("Please Enter Triangle Side Three: ");
 		double three = input.nextDouble();
 		
 		if ((one + two) > three){
 			System.out.println("The Perimeter of this Triangle is " + (one + two + three));
 		}
+		
+			else if ((two + three) > one){
+			System.out.println("The Perimeter of this Triangle is " + (one + two + three));
+		}
+		
+			else if ((one + three) > two){
+				System.out.println("The Perimeter of this Triangle is " + (one + two + three));
+			}
+			
 		else {
 			System.out.println("Input Given is Invalid.");
 		}
