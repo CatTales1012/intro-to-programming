@@ -18,20 +18,15 @@ public class Triangle {
 		System.out.print("Please Enter Triangle Side Three: ");
 		double three = input.nextDouble();
 		
-		if ((one + two) > three){
+		
+		
+		if (((one + two) > three) && ((two + three) > one) && ((one + three) > two)){
 			System.out.println("The Perimeter of this Triangle is " + (one + two + three));
 		}
-		
-			else if ((two + three) > one){
-			System.out.println("The Perimeter of this Triangle is " + (one + two + three));
-		}
-		
-			else if ((one + three) > two){
-				System.out.println("The Perimeter of this Triangle is " + (one + two + three));
-			}
-			
 		else {
 			System.out.println("Input Given is Invalid.");
 		}
+		
+		
 	}
 }
