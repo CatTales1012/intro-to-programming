@@ -32,15 +32,18 @@ public class Taxes {
 		
 		System.out.println("Employee Name: " + name);
 		System.out.println("Hours Worked: " + hours);
-		System.out.println("Pay Rate: $" + rate);
-		System.out.println("Gross Pay: $" + gp);
+		System.out.printf("Pay Rate: $%4.2f" , rate);
+		System.out.println(" ");
+		System.out.printf("Gross Pay: $%4.2f" , gp);
 		System.out.println(" ");
 		System.out.println("Deductions: ");
-		System.out.println("Federal Withholding " + "(" + (federal * 100) + "%): $" + fWithholding );
-		System.out.println("State Withholding " + "(" + (state * 100) + "%): $" + sWithholding );
-		System.out.println("Total Deduction: " + total);
+		System.out.printf("Federal Withholding (%.1f%%): $%4.2f" , (federal * 100), fWithholding );
 		System.out.println(" ");
-		System.out.println("Net Pay: $" + np);
+		System.out.printf("State Withholding: $%4.2f" , sWithholding );
+		System.out.println(" ");
+		System.out.printf("Total Deduction: $%4.2f" , total);
+		System.out.println(" ");
+		System.out.printf("Net Pay: $%4.2f" , np);
 		
 		
 	}
