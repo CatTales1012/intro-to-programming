@@ -15,18 +15,19 @@ class WordCheck {
 
 		s = s.toLowerCase();
 
-	for (int i = 0; i < s.length(); ++i){
-		char ch = s.charAt(i);
-			
-		if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+			for (int i = 0; i < s.length(); ++i){
+				char ch = s.charAt(i);
+					
+				if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 				vowels++;
-		}
-		else{
-			consonants++;
-		}
+				}
+				
+				else{
+				consonants++;
 	}
-		
-System.out.println(s + " has " + vowels + " vowels.");
-System.out.print(s + " has " + consonants + " consonants. ");
+}
+				
+		System.out.println(s + " has " + vowels + " vowels.");
+		System.out.print(s + " has " + consonants + " consonants. ");
 	}
 }
