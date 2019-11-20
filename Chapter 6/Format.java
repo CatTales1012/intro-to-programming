@@ -2,7 +2,7 @@
 /* 
 Author: Cat Smith
 Assignment: 6-37, creating a format for prefix 0's in front of integer. 
-Date: November 19
+Date: November 20
 */
 		 
 import java.util.Scanner;
@@ -17,19 +17,21 @@ class Format {
 		System.out.print("Please enter a width: ");
 		int width = input.nextInt();
 				
-		format(number, width);
-				
+		System.out.print(format(number, width));
 		 
 	}
 	public static String format(String number, int width){
 		width = width - number.length();
-				
+		
+		String formatted = "";	
+		
 		for(int i = 0; i < width; i++){
-			System.out.print("0");
+			formatted = formatted + "0";
 		}
 		
-		System.out.print(number);
-		return number; 
+		formatted = formatted + number;
+		
+		return formatted; 
 	}
 }
 	
