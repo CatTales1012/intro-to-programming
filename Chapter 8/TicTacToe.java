@@ -21,6 +21,6 @@ class TicTacToe {
 		System.out.print("Player O: Enter 0, 1, or 2 for column: ");
 		int oCol = input.nextInt();
 		
-		board[oRow][oCol] = "O"
+		board[oRow][oCol] = "O";
 	}
 }
