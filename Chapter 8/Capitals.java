@@ -22,19 +22,21 @@ class Capitals {
 		{"Oregon", "Salem"}
 		};
 		
+		int correct = 0;
 		for (int i = 0; i < 10; i++){
 			System.out.print("What is the Capital of " + states[i][0] + "? ");
 			String checker = input.nextLine();
 			
 			if(checker.equalsIgnoreCase(states[i][1]) ){
 				System.out.println("That is correct!");
+				correct++;
 			}
 			else{
 				System.out.println("The correct answer is: " + states[i][1]);
 				
 			}
 		}
-		
+		System.out.print("You got " + correct + " out of 10 Correct!");
 		
 	}
 }
